@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bún Bò Cô Oanh - Đậm Đà từng sợi bún</title>
+    <meta name="description" content="Quán Bún Bò Cô Oanh tại TP.HCM. Thưởng thức hương vị bún bò đậm đà, không gian Sài Gòn sôi động. Đặt hàng ngay!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons (for fake icons like location, phone, social) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <span class="material-icons">ramen_dining</span>
+                    Bún Bò Cô Oanh
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#menu">Thực đơn</a></li>
+                    <li><a href="#gallery">Thư viện</a></li>
+                    <li><a href="#order">Đặt món / Đặt bàn</a></li>
+                </ul>
+                <a href="#order" class="order-btn">Đặt ngay</a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span class="material-icons">menu</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="assets/hero_image_1777997617039.png" alt="Bún Bò Sài Gòn" class="hero-img">
+        <div class="hero-content">
+            <h1>Bún Bò Cô Oanh<br>Đậm Đà từng sợi bún</h1>
+            <p>"Chăm chút đến từng cọng rau"</p>
+            <a href="#menu" class="cta-button">Xem Thực Đơn</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Thực Đơn Của Quán</h2>
+            <div class="menu-grid">
+                
+                <div class="menu-item">
+                    <div class="menu-img-container">
+                        <img src="assets/menu_nam_1777997654627.png" alt="Bún Bò Nạm" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Bún Bò Nạm</h3>
+                        <p>Thịt nạm mềm thơm, nước dùng đậm đà</p>
+                        <div class="price">55.000 ₫</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-img-container">
+                        <img src="assets/menu_tai_1777997687071.png" alt="Bún Bò Tái" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Bún Bò Tái</h3>
+                        <p>Thịt bò tái ngọt mềm, tái chanh hấp dẫn</p>
+                        <div class="price">55.000 ₫</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-img-container">
+                        <img src="assets/menu_gio_1777997701088.png" alt="Bún Bò Giò" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Bún Bò Giò</h3>
+                        <p>Khoanh giò lớn, giòn sần sật, ăn cực đã</p>
+                        <div class="price">70.000 ₫</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-img-container">
+                        <img src="assets/menu_cha_1777997714660.png" alt="Bún Bò Chả" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Bún Bò Chả</h3>
+                        <p>Chả Huế dai ngon, đậm vị đặc trưng (+5k thêm chả)</p>
+                        <div class="price">60.000 ₫</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-img-container">
+                        <img src="assets/menu_gan_1777997757631.png" alt="Bún Bò Gân" class="menu-img">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Bún Bò Gân</h3>
+                        <p>Gân bò ninh nhừ, giòn dai sừn sựt</p>
+                        <div class="price">55.000 ₫</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title section-title--center">Thư Viện Ảnh</h2>
+            <div class="upload-container">
+                <label for="imageUpload" class="upload-btn">
+                    <span class="material-icons">add_photo_alternate</span> Tải ảnh lên
+                </label>
+                <input type="file" id="imageUpload" accept="image/*" multiple style="display: none;">
+            </div>
+            <div class="gallery-grid" id="galleryContainer">
+                <!-- Các ảnh mẫu -->
+                <div class="gallery-item">
+                    <img src="assets/hero_image_1777997617039.png" alt="Ảnh quán 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/menu_nam_1777997654627.png" alt="Ảnh quán 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/menu_gio_1777997701088.png" alt="Ảnh quán 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order / Booking Section -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2 class="section-title section-title--center">Đặt Hàng / Đặt Bàn</h2>
+            <div class="order-container">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Họ và Tên</label>
+                        <input type="text" id="name" class="form-control" required placeholder="Nhập tên của bạn">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại</label>
+                        <input type="tel" id="phone" class="form-control" required placeholder="090xxxxxxx">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Giờ đến / Giờ nhận hàng</label>
+                        <input type="time" id="time" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dish">Món chọn</label>
+                        <select id="dish" class="form-control" required>
+                            <option value="">-- Chọn món --</option>
+                            <option value="nam">Bún Bò Nạm (55k)</option>
+                            <option value="tai">Bún Bò Tái (55k)</option>
+                            <option value="gio">Bún Bò Giò (70k)</option>
+                            <option value="cha">Bún Bò Chả (60k)</option>
+                            <option value="gan">Bún Bò Gân (55k)</option>
+                            <option value="thap_cam">Bún Bò Thập Cẩm (80k)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Ghi chú thêm</label>
+                        <textarea id="notes" class="form-control" placeholder="Ít bún, nhiều rau, không hành..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Gửi Đơn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Bún Bò Cô Oanh</h3>
+                    <p>Hương vị truyền thống, đậm đà tình thân.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="Facebook">FB</a>
+                        <a href="#" class="social-icon" title="Instagram">IG</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Liên Hệ</h3>
+                    <p><span class="material-icons">location_on</span> 48 Đường Trần Hưng Đạo, Tăng Nhơn Phú, TP.HCM</p>
+                    <p><span class="material-icons">phone</span> 090xxxxxxx</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Giờ Mở Cửa</h3>
+                    <p><span class="material-icons">schedule</span> Sáng: 06:00 - 13:00</p>
+                    <p><span class="material-icons">schedule</span> Chiều: 16:00 - 22:00</p>
+                </div>
+            </div>
+            <div class="credit">
+                Thiết kế bởi Hồng Nhật
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

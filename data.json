@@ -1,0 +1,25 @@
+{
+  "gallery": [],
+  "orders": [
+    {
+      "id": 1,
+      "name": "Nguyễn Hồng Nhật",
+      "phone": "03699933850",
+      "time": "03:55",
+      "dish": "thap_cam",
+      "notes": "nhiều rau",
+      "created_at": "2026-05-05T17:28:13.625Z"
+    },
+    {
+      "id": 2,
+      "name": "Nguyễn Hồng Nhật",
+      "phone": "0369933850",
+      "time": "19:50",
+      "dish": "thap_cam",
+      "notes": "",
+      "created_at": "2026-05-05T17:41:24.685Z"
+    }
+  ],
+  "nextGalleryId": 3,
+  "nextOrderId": 3
+}
